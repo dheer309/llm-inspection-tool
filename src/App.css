@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: darkgreen;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.editors-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.editors-container > div {
+  flex: 1 1 48%;
+  min-width: 300px;
+}
+
+.code-editor {
+  border: 1px solid grey;
+  border-radius: 5px;
+  min-height: 300px;
+  font-family: monospace;
+}
+
+@media (max-width: 600px) {
+  .editors-container {
+    flex-direction: column;
+  }
+
+  .editors-container > div {
+    width: 100%;
+  }
+}
