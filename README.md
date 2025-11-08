@@ -1,16 +1,26 @@
-# React + Vite
+# Prompt generator with code diff
+This app has two fields, old code and new code. Hit the generate prompt button, which compares the code in these fields, and generates a prompt with a code diff given, which can be pasted into any LLM for analysis.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to run
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, you will need to have the following tools installed on your machine: Git (https://git-scm.com), and Node JS (https://nodejs.org/en/).
 
-## React Compiler
+### Running the app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Clone this repository
+$ git clone https://github.com/dheer309/llm-inspection-tool.git
 
-## Expanding the ESLint configuration
+# Access the project folder in your terminal
+$ cd llm-inspection-tool
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Install the dependencies
+$ npm i
+
+# Run the application in development mode
+$ npm run dev
+
+# The application will start running and it's url will be visible on the terminal
+```
